@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/iconsite.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="stylepg1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<title>SakuraMotors</title>
+</head>
+<body>
+	<div class="glavstr">
+	<header class="header" id="header">
+		<div class="logo">
+			<img src="img/logo.svg" onclick="ClickLogo()">
+		</div>
+		
+		<div class="container_header">
+			<nav	class="content-nav">
+			<a href="404.html" id="navissilki">Каталог</a>
+			<a href="#onas" id="navissilki">О нас</a>
+			<a href="#blog" id="navissilki">Блог</a>
+			<a href="#kontakt" id="navissilki">Контакты</a>
+		</nav>
+		</div>
+		<div class="poiskstr">
+			<input type="text" id="search">
+		</div>
+	</header>
+	<div class="text-glav">
+		<h1 id="txt1">Сила, качество, надежность -<br>ваши ключи к безупречному автомобилю!</h1>
+		<p id="txt2">На нашем сайте Вы сможете найти японский автомобиль своей мечты по привлекательной цене.<br>Приглашаем посмотреть каталог наших авто высокого класса</p>
+		<button class="btn-go" id="go-btn">ПОЕХАЛИ</button>
+	</div>
+</div>
+<div class="about-me">
+	<h1 class="zagolov" id="onas">Почему покупатели выбирают нас?</h1>
+	<div class="premium">
+		<div class="card">
+			<img src="img/quality.png" class="icon-premi">
+			<h2 class="kartozag">КАЧЕСТВО</h2>
+			<p class="opis-kart">Мы поставляем только<br>качественные и новые автомобили<br>наши клиенты всегда рады</p>
+
+		</div>
+		<div class="card">
+			<img src="img/profit.png" class="icon-premi">
+			<h2 class="kartozag">ВЫГОДА</h2>
+			<p class="opis-kart">Приобретая автомобиль у нас, клиенты получают большую выгоду. Также у нас есть спец.предложения, акции и конкурсы</p>
+
+		</div>
+		<div class="card">
+			<img src="img/car-rental.png" class="icon-premi">
+			<h2 class="kartozag">АССОРТИМЕНТ</h2>
+			<p class="opis-kart">В каталоге клиенты могут найти большое количество авто. Каждый, находит себе то, что ему по душе</p>
+			
+		</div>
+	</div>
+	<div class="opis">
+	<p class="opis-onas">Мы давно работаем с автомобильным рыноком. Нашей компании уже 10 лет! Клиенты, которые обращались к нам, оставались довольными.<br>Мы всегда рады новым клиентам, добро пожаловать к нам в команду!</p>
+	</div>
+</div>
+<div class="blog" id="blog">
+	<h1 class="blog-zag" >Хотите быть в курсе всех событий?</h1>
+	<p class="blog-opis">Подписывайтесь на наш паблик в вк и следите за новостями.<br>Также наши подписчики моугт публиковать фотографии интеренсых машин<br>SOKOSHISUITAIRU</p>
+	<button class="blog-vk" onclick="OpenPublcik()">ПОДПИСАТЬСЯ</button>
+</div>
+<div class="kontakt" id="kontakt">
+	<h1 class="zagolov">Свяжитесь с нами, если остались вопросы</h1>
+	<div class="info-dir">
+	<img src="img/director.jpg.png" class="sotr-dir">
+	<p id="opis-dir">ДИРЕКТОР</p>
+	<p id="opis-dir" style="margin-top: -100px; margin-left: 260px;">+7(924)308-15-76</p>
+	</div>
+	<div class="info-dir">
+		<img src="img/director.jpg.png" class="sotr-dir">
+		<p id="opis-dir">МЕНЕДЖЕР</p>
+		<p id="opis-dir" style="margin-top: -100px; margin-left: 260px;">+7(924)308-15-76</p>
+		</div>
+</div>
+<div class="obrsvaz">
+<form action="sender.php" method="post" id="emailForm">
+	<h2 class="form-zag">Нужна помощь с выбором авто?</h2>
+	<input type="text" name="name" id="input-form" placeholder="Введите ваше имя" required>
+	<input type="text" class="phone" name="phone" id="input-form" placeholder="Введите ваш телефон" >
+	<input type="email" name="email" id="input-form" placeholder="Введите ваш e-mail">
+	<button type="button" class="send-form" id="form-zayavka">Отправить заявку</button>
+	<div class="status"></div>
+</form>
+</div>
+<footer>
+	<h2 id="footertext">Email: kittycatsss26@mail.ru</h2>
+</footer>
+
+<div id="back-to-top" class="back-to-top">
+	<img src="img/icostrel.png">
+</div>
+
+</div>
+<script defer src="javascript/myscript1.js"></script>
+<script defer src="javascript/jquery-3.7.1.min.js"></script>
+<script defer src="javascript/scrollup.js"></script>
+<script defer src="javascript/formget.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+</body>
+
+</html>
